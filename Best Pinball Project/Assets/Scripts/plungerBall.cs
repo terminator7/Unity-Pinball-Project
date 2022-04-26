@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class plungerBall : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class plungerBall : MonoBehaviour
     private Renderer rend;
     public Collider2D lowerBound;
     public Collider2D leftBound;
+    public Text ballsRemainingText;
 
     //Initalizing Manipulated Variables
     private int remainingBalls;
@@ -34,6 +37,8 @@ public class plungerBall : MonoBehaviour
         rend.enabled = false;
         isPressed = false;
         remainingBalls = MAX_BALLS;
+
+        ballsRemainingText.text = remainingBalls.ToString();
     }
 
     // Update is called once per frame
@@ -57,6 +62,13 @@ public class plungerBall : MonoBehaviour
         if(ball.IsTouching(lowerBound)) {
             
             remainingBalls -= 1;
+
+            ballsRemainingText.text = remainingBalls.ToString();
+
+            if(remainingBalls == 0) {
+                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            }
+
             transform.position = new Vector2(STARTING_X, -4.04f);
             ball.velocity = new Vector2(0, 0);
             isPressed = false;
