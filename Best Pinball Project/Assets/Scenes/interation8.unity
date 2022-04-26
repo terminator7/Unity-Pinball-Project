@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 50
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!61 &111308403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 10
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!58 &709160315
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 10
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!58 &808971529
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 10
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!58 &809716021
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 50
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!61 &1306998679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increment: 10
-  score_text: {fileID: 0}
+  score_text: {fileID: 2001088213}
 --- !u!1 &1520384284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,9 +2809,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001088211}
+  - component: {fileID: 2001088212}
   - component: {fileID: 2001088214}
   - component: {fileID: 2001088213}
-  - component: {fileID: 2001088212}
   m_Layer: 5
   m_Name: scoreText
   m_TagString: Untagged
@@ -2835,8 +2835,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1257.2249, y: -171.8}
-  m_SizeDelta: {x: 1023.6766, y: 120.7619}
+  m_AnchoredPosition: {x: 1244.3, y: -170}
+  m_SizeDelta: {x: 985.9, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001088212
 MonoBehaviour:
@@ -2879,13 +2879,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 100
-  m_Text: 0000000
+    m_LineSpacing: 1
+  m_Text: 0
 --- !u!222 &2001088214
 CanvasRenderer:
   m_ObjectHideFlags: 0
